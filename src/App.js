@@ -133,9 +133,19 @@ const Footer = () => {
 
       <div className="footer-content">
         <div className="grid-3">
-          <h4>Contactenos</h4>
-          <h4>Dirección</h4>
-          <div className="middle">
+          <div className="center">
+            <h4>Contactenos</h4>
+            <p>telf: +593 04-6034092</p>
+            <p>cel: +593 0989909415</p>
+            <p>Mail: <a className="a-blanco" href="mailto:soporte@puntoverde.com">soporte@puntoverde.com</a></p>
+          </div>
+
+          <div className="center">
+            <h4>Dirección</h4>
+            <p>Ecuador, Guayaquil - Complejo Ciudad del Río, Edificio The Point piso 24</p>
+          </div>
+
+          <div className="center">
             <h4>Redes Sociales</h4>
             <a
               className="click"
@@ -145,6 +155,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <p className="footer-copyright">Todos los derechos reservados - ©2022 Punto Verde</p>
       </div>
     </div>
   );

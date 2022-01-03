@@ -23,3 +23,12 @@
     height:4rem;
     cursor:pointer;
 }
+
+.a-blanco{
+    color:white;
+}
+.a-blanco:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+
