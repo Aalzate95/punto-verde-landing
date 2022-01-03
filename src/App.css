@@ -48,6 +48,30 @@ html{
   bottom: 0;
 }
 
+.footer{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content{
+  width: 100%;
+  height: 15rem;
+  display:flex;
+  flex-direction: column;
+  background-color: #021c1e;
+  color:white;
+  padding-top: 2rem;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr
+}
+
+
 
 
 
