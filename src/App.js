@@ -1,5 +1,6 @@
 import "./App.css";
 import Sidenav from "./components/sidenav/Sidenav";
+import {IoLogoInstagram} from "react-icons/io";
 
 function App() {
   return (
@@ -22,7 +23,20 @@ function App() {
       </div>
 
       <div className="section middle" id="propuesta-valor">
-        <div>Propuesta de valor</div>
+        <div className="content">
+          <h2>Propuesta de valor</h2>
+          <div>
+            <p>
+              Las empresas que colaboren, podrán tener publicidad para poder
+              hacerse conocer mediante el emprendimiento, y las personas
+              voluntarias podrán adquirir conocimientos que muchos carecen sobre
+              el reciclaje para incluso poder aprovechar dichos conocimientos en
+              su día a día, y podrán adquirir ciertos productos que se consiguen
+              en cualquier punto de venta puesto que, estos estarán hechos en
+              base a material reciclado.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="section middle" id="fecha-lanzamiento">
         <div>Fecha de lanzamiento</div>
@@ -30,7 +44,7 @@ function App() {
       <div className="section middle" id="formulario">
         <div>Formulario preventa</div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
@@ -51,9 +65,13 @@ const Footer = () => {
         <div className="grid-3">
           <h3>Contactenos</h3>
           <h3>Dirección</h3>
-          <h3>Redes</h3>
+          <div className="middle">
+            <h3>Redes Sociales</h3>
+            <a className="click" href="https://instagram.com/puntoverde2022?r=nametag">
+              <IoLogoInstagram size="30" color="white"/>
+            </a>
+          </div>
         </div>
-          
       </div>
     </div>
   );
