@@ -1,0 +1,9 @@
+.sidenav{
+    background-color:#6fb98f;
+    height:15rem;
+    width:3rem;
+    position:fixed;
+    right:0.5rem;
+    top: 30%;
+    border-radius: 0.5rem;
+}
