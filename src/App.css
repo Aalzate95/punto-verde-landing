@@ -11,8 +11,10 @@ html{
 }
 
 .middle{
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-column{
@@ -26,17 +28,26 @@ html{
 
 .header{
   width: 100%;
-  background-color:#021C1e;
   color: white;
-  height: 12rem;
+  height: 15rem;
   display:flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
 
-.header svg{
+.theme1{
+  background-color: #021c1e;
+}
+
+.waves{
+  position: relative;
   width: 100%;
+  height: 100%;
 }
+.waves svg{
+  position:absolute;
+  bottom: 0;
+}
+
 
 
 

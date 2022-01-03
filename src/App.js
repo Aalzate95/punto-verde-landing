@@ -5,10 +5,12 @@ function App() {
   return (
     <div className="App">
       <Sidenav />
-      <div className="section1">
-        <div className="header">
+      <div className="header section ">
+        <div className="waves theme1 middle">
           <h1>Punto Verde</h1>
-
+          <div className="header-content">
+            <h3>Descripción</h3>
+          </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#2c7873"
@@ -17,18 +19,15 @@ function App() {
             ></path>
           </svg>
         </div>
-        <div className="content">
-          <h3>Descripción</h3>
-        </div>
       </div>
-      
-      <div className="section">
+
+      <div className="section middle" id="propuesta-valor">
         <div>Propuesta de valor</div>
       </div>
-      <div className="section">
+      <div className="section middle" id="fecha-lanzamiento">
         <div>Fecha de lanzamiento</div>
       </div>
-      <div className="section">
+      <div className="section middle" id="formulario">
         <div>Formulario preventa</div>
       </div>
     </div>
