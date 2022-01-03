@@ -9,13 +9,13 @@ const Sidenav = () => {
             <a href="/" className="icon click">
                 <IoHome size="30" color="white"/>
             </a>
-            <a href="/propuesta-valor" className="icon click">
+            <a href="/#propuesta-valor" className="icon click">
                 <IoRibbon size="30" color="white"/>
             </a>
-            <a href="/fecha-lanzamiento" className="icon click">
+            <a href="/#fecha-lanzamiento" className="icon click">
                 <IoRocket size="30" color="white"/>
             </a>
-            <a href="/formulario" className="icon click">
+            <a href="/#formulario" className="icon click">
                 <IoNewspaper size="30" color="white"/>
             </a>
         </div>
