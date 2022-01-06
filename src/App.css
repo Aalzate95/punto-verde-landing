@@ -268,4 +268,7 @@ html{
     display:grid;
     grid-template-columns:1fr 1fr;
   }
+  .header-logo{
+    margin-bottom:3rem;
+  }
 }
