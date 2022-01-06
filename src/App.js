@@ -4,6 +4,11 @@ import Sidenav from "./components/sidenav/Sidenav";
 import { IoLogoInstagram } from "react-icons/io";
 import logo from "./images/punto-verde-logo.png";
 import Language from "./components/language/Language";
+import reciclajePlaneta from "./images/reciclaje-planeta.png";
+import fundaEcologica from "./images/funda-ecologica.png";
+import fundasTipos from "./images/fundas-tipos.png";
+import fundaFrontal from "./images/funda-frontal.png";
+import instruccionesUso from "./images/instrucciones-uso.png";
 
 function App() {
   const [mailMensaje, setMailMensaje] = useState("");
@@ -11,13 +16,23 @@ function App() {
 
   return (
     <div className="App">
-      <Language/>
+      <Language />
       <Sidenav />
       <div className="header">
         <div className="waves theme1 middle">
-          <div className="header-logo">
-            <img src={logo} alt="logo" />
-            <h1>Punto Verde</h1>
+          <div className="header-grid">
+            <div className="">
+              <img className="image-small" src={reciclajePlaneta} alt="logo" />
+            </div>
+
+            <div className="header-logo">
+              <img src={logo} alt="logo" />
+              <h1>Punto Verde</h1>
+            </div>
+
+            <div className="">
+              <img className="image-small" src={fundaEcologica} alt="logo" />
+            </div>
           </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -31,26 +46,50 @@ function App() {
       </div>
 
       <div className="section middle" id="descripcion">
-        <div className="content">
-          <h3>Descripción</h3>
-          <div>
-            <p>
-              Este proyecto guiara a las personas para que puedan reciclar de la
-              manera correcta los materiales que tienen en sus hogares a través
-              de una aplicación la cual también va de la mano junto a las fundas
-              de colores que se entregan, este sistema consta de niveles que le
-              darán beneficios como cupones de descuentos, etc.
-            </p>
-            <p>
-            En esta aplicación se trata de que el usuario tenga la facilidad de realizar la actividad sin llegar a las grandes recicladoras, de esta manera las personas entregan estos materiales a nosotros quienes funcionamos como “intermediarios”.
-            </p>
-            <p>
-            Entre las características de este producto tenemos las fundas biodegradables, tienda de productos realizados con el reciclaje, beneficios para los usuarios más comprometidos, control para los sectores de los usuarios.
-            </p>
-            fundas
-            <p>
-            Los precios que se manejaran son los regulados por el ministerio del ambiente:
-            </p>
+        <div className="content ">
+          <h1>Descripción</h1>
+          <div className="description-content margin-top-bottom">
+            <div className="video-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/i31-OFflIfw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <p>
+                Este proyecto guiara a las personas para que puedan reciclar de
+                la manera correcta los materiales que tienen en sus hogares a
+                través de una aplicación la cual también va de la mano junto a
+                las fundas de colores que se entregan, este sistema consta de
+                niveles que le darán beneficios como cupones de descuentos, etc.
+              </p>
+              <p>
+                En esta aplicación se trata de que el usuario tenga la facilidad
+                de realizar la actividad sin llegar a las grandes recicladoras,
+                de esta manera las personas entregan estos materiales a nosotros
+                quienes funcionamos como “intermediarios”.
+              </p>
+            </div>
+          </div>
+          <div className="margin-top-bottom">
+            <div>
+              <img className="image-medium" src={fundasTipos} alt="logo" />
+            </div>
+            <div>
+              <p>
+                Entre las características de este producto tenemos las fundas
+                biodegradables, tienda de productos realizados con el reciclaje,
+                beneficios para los usuarios más comprometidos, control para los
+                sectores de los usuarios.
+              </p>
+              <div>
+                <img className="image-large" src={fundaFrontal} alt="logo"/>
+                <img className="image-large" src={instruccionesUso} alt="logo" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -137,12 +176,20 @@ const Footer = () => {
             <h4>Contactenos</h4>
             <p>telf: +593 04-6034092</p>
             <p>cel: +593 0989909415</p>
-            <p>Mail: <a className="a-blanco" href="mailto:soporte@puntoverde.com">soporte@puntoverde.com</a></p>
+            <p>
+              Mail:{" "}
+              <a className="a-blanco" href="mailto:soporte@puntoverde.com">
+                soporte@puntoverde.com
+              </a>
+            </p>
           </div>
 
           <div className="center">
             <h4>Dirección</h4>
-            <p>Ecuador, Guayaquil - Complejo Ciudad del Río, Edificio The Point piso 24</p>
+            <p>
+              Ecuador, Guayaquil - Complejo Ciudad del Río, Edificio The Point
+              piso 24
+            </p>
           </div>
 
           <div className="center">
@@ -157,7 +204,9 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="footer-copyright">Todos los derechos reservados - ©2022 Punto Verde</p>
+        <p className="footer-copyright">
+          Todos los derechos reservados - ©2022 Punto Verde
+        </p>
       </div>
     </div>
   );
