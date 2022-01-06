@@ -22,7 +22,7 @@ function App() {
         <div className="waves theme1 middle">
           <div className="header-grid">
             <div className="">
-              <img className="image-small" src={reciclajePlaneta} alt="logo" />
+              <img className="image-small none" src={reciclajePlaneta} alt="logo" />
             </div>
 
             <div className="header-logo">
@@ -31,7 +31,7 @@ function App() {
             </div>
 
             <div className="">
-              <img className="image-small" src={fundaEcologica} alt="logo" />
+              <img className="image-small none" src={fundaEcologica} alt="logo" />
             </div>
           </div>
 
@@ -184,7 +184,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="center">
+          <div className="center none">
             <h4>Dirección</h4>
             <p>
               Ecuador, Guayaquil - Complejo Ciudad del Río, Edificio The Point

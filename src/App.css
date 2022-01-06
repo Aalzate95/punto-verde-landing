@@ -244,4 +244,28 @@ html{
   .Contacto-content {
     width: 80%;
   }
+  .none{
+    display:none;
+  }
+  .description-content{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .image-medium{
+    width: auto;
+    height: 15rem;
+    margin:1rem;
+  }
+  .image-large{
+    width: auto;
+    height: 15rem;
+    margin:1rem;
+  }
+  .content{
+    padding:0 2rem 0 2rem;
+  }
+  .grid-3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
 }
