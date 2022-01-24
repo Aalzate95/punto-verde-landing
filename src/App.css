@@ -38,9 +38,15 @@ html{
 }
 
 .header-grid{
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.images-header img{
+  margin-top: 0px;
+  
 }
 
 .flex-column{
@@ -92,6 +98,8 @@ html{
   color:white;
   padding-top: 2rem;
 }
+
+
 
 .footer-waves{
   position: relative;
@@ -164,6 +172,9 @@ html{
   margin-top: 20px;
 }
 
+.Contacto-content p{
+  font-weight: bold;
+}
 .form-group{
   margin-bottom: 15px;
 }
@@ -239,6 +250,67 @@ html{
   width: 100%;
   height: 100%;
   }
+
+.review p{
+  text-align: justify;
+}
+
+
+
+.table{
+  margin-left: auto;
+  margin-right: auto;
+  size: 10% 10%;
+}
+
+.table-prices{
+  width: 40%;
+  margin: auto;
+}
+
+table.table-prices {
+  background-color: #555555;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.table-prices td, table.table-prices th {
+  border: 1px solid #555555;
+  padding: 5px 10px;
+}
+table.table-prices tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.table-prices thead {
+  background: #004445;
+}
+table.table-prices thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.table-prices tfoot td {
+  font-size: 13px;
+}
+table.table-prices tfoot .links {
+  text-align: right;
+}
+table.table-prices tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #398AA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+#fecha-lanzamiento{
+  min-height: 0;
+}
+
+#formulario{
+  min-height: 80vh;
+}
 
 @media only screen and (max-width: 600px) {
   .Contacto-content {

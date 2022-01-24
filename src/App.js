@@ -9,10 +9,15 @@ import fundaEcologica from "./images/funda-ecologica.png";
 import fundasTipos from "./images/fundas-tipos.png";
 import fundaFrontal from "./images/funda-frontal.png";
 import instruccionesUso from "./images/instrucciones-uso.png";
+import mundo from "./images/mundo.png";
+import fundaLlena from "./images/funda-llena.png";
+import recolectando from "./images/recolectando.png";
+import clasificacionBasura from "./images/clasificacion-basura.png";
 
 function App() {
   const [mailMensaje, setMailMensaje] = useState("");
   const [mailNombre, setMailNombre] = useState("");
+  const [mailCiudad, setMailCiudad] = useState("");
 
   return (
     <div className="App">
@@ -21,7 +26,7 @@ function App() {
       <div className="header">
         <div className="waves theme1 middle">
           <div className="header-grid">
-            <div className="">
+            <div className="images-header">
               <img className="image-small none" src={reciclajePlaneta} alt="logo" />
             </div>
 
@@ -30,7 +35,7 @@ function App() {
               <h1>Punto Verde</h1>
             </div>
 
-            <div className="">
+            <div className="images-header">
               <img className="image-small none" src={fundaEcologica} alt="logo" />
             </div>
           </div>
@@ -58,7 +63,7 @@ function App() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div>
+            <div className="review">
               <p>
                 Este proyecto guiara a las personas para que puedan reciclar de
                 la manera correcta los materiales que tienen en sus hogares a
@@ -89,7 +94,42 @@ function App() {
                 <img className="image-large" src={fundaFrontal} alt="logo"/>
                 <img className="image-large" src={instruccionesUso} alt="logo" />
               </div>
+
+              
             </div>
+            <table className="table-prices">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Funda(100 unidades)</td>
+                  <td>$20</td>
+                </tr>
+                <tr>
+                  <td>Funda(500 unidades)</td>
+                  <td>$60</td>
+                </tr>
+                <tr>
+                  <td>Funda(1500 unidades)</td>
+                  <td>$180</td>
+                </tr>
+                <tr>
+                  <td>Funda(3000 unidades)</td>
+                  <td>$360</td>
+                </tr>
+                <tr>
+                  <td>Funda(5000 unidades)</td>
+                  <td>$600</td>
+                </tr>
+              </tbody>
+              <tbody>
+
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -97,7 +137,7 @@ function App() {
       <div className="section middle" id="propuesta-valor">
         <div className="content">
           <h2>Propuesta de valor</h2>
-          <div>
+          <div className="value-proposal">
             <p>
               Las empresas que colaboren, podrán tener publicidad para poder
               hacerse conocer mediante el emprendimiento, y las personas
@@ -108,6 +148,13 @@ function App() {
               base a material reciclado.
             </p>
           </div>
+          <div className="imagenes-proposal">
+            <img className="image-large" src={mundo} alt="logo"/>  
+            <img className="image-large" src={fundaLlena} alt="logo"/> 
+            <img className="image-large" src={clasificacionBasura} alt="logo"/> 
+            <img className="image-large" src={recolectando} alt="logo"/> 
+          </div>
+          
         </div>
       </div>
       <div className="section middle" id="fecha-lanzamiento">
@@ -117,6 +164,7 @@ function App() {
       <div className="section middle" id="formulario">
         <h2>Escribenos</h2>
         <div className="Contacto-content">
+          <p>QUIERO SER VOLUNTARIO  !</p>
           <div className="form-group">
             <input
               className="form-control"
@@ -134,6 +182,17 @@ function App() {
               className="form-control"
               name="message"
               type="text"
+              placeholder="CIUDAD"
+              onChange={(e) => {
+                setMailCiudad(e.target.value);
+              }}
+            />
+          </div>
+          <div className="form-group">
+            <input
+              className="form-control"
+              name="message"
+              type="text"
               placeholder="MENSAJE"
               onChange={(e) => {
                 setMailMensaje(e.target.value);
@@ -142,7 +201,7 @@ function App() {
           </div>
           <div className="form-group contact-button">
             <a
-              href={`mailto:aalzate@espol.edu.ec?subject=Quiero contactar contigo, mi nombre es ${mailNombre}&body=${mailMensaje}`}
+              href={`mailto:aalzate@espol.edu.ec?subject=Quiero contactar contigo, mi nombre es ${mailNombre}, provengo de la ciudad de ${mailCiudad}&body=${mailMensaje}`}
               className="form-button"
             >
               Enviar
@@ -151,7 +210,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </div>
+    </div >
   );
 }
 
@@ -160,6 +219,7 @@ export default App;
 const Footer = () => {
   return (
     <div className="footer">
+      
       <div className="footer-waves">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
